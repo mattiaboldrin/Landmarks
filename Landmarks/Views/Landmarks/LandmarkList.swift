@@ -14,7 +14,6 @@ struct LandmarkList: View {
         }*/
         //modifica per commit
         //altra modifica
-        var let i = Int
         NavigationView {
             List(landmarks) { landmark in
                 NavigationLink {
