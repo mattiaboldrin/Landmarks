@@ -12,6 +12,9 @@ struct LandmarkList: View {
         /*List(landmarks, id: \.id) { landmark in
             LandmarkRow(landmark: landmark)
         }*/
+        //modifica per commit
+        //altra modifica
+        var let i = Int
         NavigationView {
             List(landmarks) { landmark in
                 NavigationLink {
