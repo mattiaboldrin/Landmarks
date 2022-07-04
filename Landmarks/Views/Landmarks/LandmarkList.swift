@@ -12,8 +12,6 @@ struct LandmarkList: View {
         /*List(landmarks, id: \.id) { landmark in
             LandmarkRow(landmark: landmark)
         }*/
-        //modifica per commit
-        //altra modifica
         NavigationView {
             List(landmarks) { landmark in
                 NavigationLink {
