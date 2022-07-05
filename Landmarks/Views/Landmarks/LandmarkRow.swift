@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A single row to be displayed in a list of landmarks.
-*/
+//
+//  LandmarkRow.swift
+//  Landmarks
+//
+//  Created by Mattia Boldrin on 01/07/22.
+//
 
 import SwiftUI
 
