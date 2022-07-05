@@ -1,6 +1,6 @@
 //
 //  LandmarkDetail.swift
-//  Landmarks
+//  LandMark
 //
 //  Created by Mattia Boldrin on 01/07/22.
 //
@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
-    
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
-    
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
+
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
@@ -22,8 +26,11 @@ struct LandmarkDetail: View {
                 .padding(.bottom, -130)
 
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
 
                 HStack {
                     Text(landmark.park)
@@ -40,7 +47,6 @@ struct LandmarkDetail: View {
                 Text(landmark.description)
             }
             .padding()
-            Spacer()
         }
         .navigationTitle(landmark.name)
         .navigationBarTitleDisplayMode(.inline)
@@ -48,7 +54,10 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: modelData.landmarks[0])
+            .environmentObject(modelData)
     }
 }

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Landmarks
+//  ContentView
 //
 //  Created by Mattia Boldrin on 01/07/22.
 //
@@ -16,5 +16,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
