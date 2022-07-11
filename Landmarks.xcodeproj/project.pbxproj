@@ -19,6 +19,10 @@
 		824ABAAE286F8A8600D6E077 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824ABAAD286F8A8600D6E077 /* LandmarkRow.swift */; };
 		824ABAB0286F912B00D6E077 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824ABAAF286F912B00D6E077 /* LandmarkList.swift */; };
 		824ABAB2286F946700D6E077 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824ABAB1286F946700D6E077 /* LandmarkDetail.swift */; };
+		825ED3F0287C86CF00DF91B2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825ED3EF287C86CF00DF91B2 /* Profile.swift */; };
+		825ED3F3287C87B400DF91B2 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825ED3F2287C87B400DF91B2 /* ProfileHost.swift */; };
+		825ED3F5287C882000DF91B2 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825ED3F4287C882000DF91B2 /* ProfileSummary.swift */; };
+		825ED3F7287C892F00DF91B2 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825ED3F6287C892F00DF91B2 /* HikeBadge.swift */; };
 		8275B4BB2874C97600C0E5F3 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8275B4BA2874C97600C0E5F3 /* hikeData.json */; };
 		8275B4BF2874CBCD00C0E5F3 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8275B4BE2874CBCD00C0E5F3 /* CategoryHome.swift */; };
 		8275B4C12874D16600C0E5F3 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8275B4C02874D16600C0E5F3 /* CategoryRow.swift */; };
@@ -50,6 +54,10 @@
 		824ABAAD286F8A8600D6E077 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		824ABAAF286F912B00D6E077 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		824ABAB1286F946700D6E077 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		825ED3EF287C86CF00DF91B2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		825ED3F2287C87B400DF91B2 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		825ED3F4287C882000DF91B2 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		825ED3F6287C892F00DF91B2 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		8275B4BA2874C97600C0E5F3 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		8275B4BE2874CBCD00C0E5F3 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		8275B4C02874D16600C0E5F3 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 		824ABAAA286F89A500D6E077 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				825ED3F1287C87A500DF91B2 /* Profiles */,
 				8275B4BD2874CBBA00C0E5F3 /* Categories */,
 				827F03DB2874C8A7003366C3 /* Hikes */,
 				827F03CF2874C832003366C3 /* Badges */,
@@ -134,6 +143,7 @@
 				824ABAA7286F861200D6E077 /* ModelData.swift */,
 				824ABA8F286F836800D6E077 /* Landmark.swift */,
 				827F03CD2874C7FA003366C3 /* Hike.swift */,
+				825ED3EF287C86CF00DF91B2 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +155,15 @@
 				824ABA8D286F833400D6E077 /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		825ED3F1287C87A500DF91B2 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				825ED3F2287C87B400DF91B2 /* ProfileHost.swift */,
+				825ED3F4287C882000DF91B2 /* ProfileSummary.swift */,
+			);
+			path = Profiles;
 			sourceTree = "<group>";
 		};
 		8275B4BD2874CBBA00C0E5F3 /* Categories */ = {
@@ -196,6 +215,7 @@
 				827F03DD2874C8B2003366C3 /* HikeDetail.swift */,
 				827F03DC2874C8B2003366C3 /* HikeGraph.swift */,
 				827F03DE2874C8B3003366C3 /* HikeView.swift */,
+				825ED3F6287C892F00DF91B2 /* HikeBadge.swift */,
 			);
 			path = Hikes;
 			sourceTree = "<group>";
@@ -273,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8275B4C12874D16600C0E5F3 /* CategoryRow.swift in Sources */,
+				825ED3F0287C86CF00DF91B2 /* Profile.swift in Sources */,
 				827F03E32874C8B3003366C3 /* GraphCapsule.swift in Sources */,
 				8275B4BF2874CBCD00C0E5F3 /* CategoryHome.swift in Sources */,
 				827F03D52874C84C003366C3 /* HexagonParameters.swift in Sources */,
@@ -283,7 +304,9 @@
 				827F03BA2874C23F003366C3 /* FavoriteButton.swift in Sources */,
 				8275B4C32874D63A00C0E5F3 /* CategoryItem.swift in Sources */,
 				827F03D92874C84C003366C3 /* BadgeSymbol.swift in Sources */,
+				825ED3F5287C882000DF91B2 /* ProfileSummary.swift in Sources */,
 				827F03CE2874C7FA003366C3 /* Hike.swift in Sources */,
+				825ED3F3287C87B400DF91B2 /* ProfileHost.swift in Sources */,
 				824ABAB0286F912B00D6E077 /* LandmarkList.swift in Sources */,
 				827F03D72874C84C003366C3 /* Badge.swift in Sources */,
 				824ABAB2286F946700D6E077 /* LandmarkDetail.swift in Sources */,
@@ -291,6 +314,7 @@
 				827F03E12874C8B3003366C3 /* HikeDetail.swift in Sources */,
 				824ABA90286F836800D6E077 /* Landmark.swift in Sources */,
 				827F03D62874C84C003366C3 /* RotatedBadgeSymbol.swift in Sources */,
+				825ED3F7287C892F00DF91B2 /* HikeBadge.swift in Sources */,
 				824ABAAE286F8A8600D6E077 /* LandmarkRow.swift in Sources */,
 				827F03D82874C84C003366C3 /* BadgeBackground.swift in Sources */,
 				824ABAA8286F861200D6E077 /* ModelData.swift in Sources */,
@@ -420,12 +444,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 6D8B6KW484;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Landmarks;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,11 +463,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.mattiaboldrin.Landmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,9 +483,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 6D8B6KW484;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Landmarks;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,11 +498,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiss-software.Landmarks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
